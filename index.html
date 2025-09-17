@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <!-- Event snippet for Перегляд сторінки conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17572856538/oiQACN6Q5JsbENqFsrtB',
-      'value': 1.0,
-      'currency': 'UAH'
-  });
-</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life Expectancy Token (LET)</title>
+  <meta name="description" content="LET is the first token whose value grows with global life expectancy. Mint with USDC, redeem anytime on Arbitrum." />
+  <meta name="keywords" content="LET, crypto, token, life expectancy, Arbitrum, USDC, DeFi" />
+  <meta name="author" content="Serhii Polovynka" />
 
-    <!-- Event snippet for Перегляд сторінки conversion page --> <script> gtag('event', 'conversion', { 'send_to': 'AW-17572856538/oiQACN6Q5JsbENqFsrtB', 'value': 1.0, 'currency': 'UAH' }); </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Life Expectancy Token (LET)</title>
-    <meta name="description" content="LET is the first token whose value grows with global life expectancy. Mint with USDC, redeem anytime on Arbitrum." />
-    <meta name="keywords" content="LET, crypto, token, life expectancy, Arbitrum, USDC, DeFi" />
-    <meta name="author" content="Serhii Polovynka" />
-    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17572856538"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17572856538'); </script>
-    <!-- Social preview -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Life Expectancy Token (LET)" />
-    <meta property="og:description" content="Token whose price grows with global life expectancy." />
-    <meta property="og:image" content="/LET_logo.png" />
-    <meta property="og:url" content="https://let-token.com" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Life Expectancy Token (LET)" />
-    <meta name="twitter:description" content="Invest in humanity's time — LET on Arbitrum." />
-    <meta name="twitter:image" content="/LET_logo.png" />
-    
-    <link rel="icon" type="image/png" href="/LET_logo.png" />
-  <body>
-    <!-- Google tag (gtag.js) --> <amp-analytics type="gtag" data-credentials="include"> <script type="application/json"> { "vars": { "gtag_id": "AW-17572856538", "config": { "AW-17572856538": { "groups": "default" } } }, "triggers": { } } </script> </amp-analytics>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17572856538"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // базова ініціалізація Google Ads
+    gtag('config', 'AW-17572856538');
+
+    // конверсія "Перегляд сторінки" — викликаємо ПІСЛЯ ініціалізації
+    window.addEventListener('load', function () {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17572856538/oiQACN6Q5JsbENqFsrtB',
+        'value': 1.0,
+        'currency': 'UAH'
+      });
+    });
+  </script>
+
+  <!-- Social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Life Expectancy Token (LET)" />
+  <meta property="og:description" content="Token whose price grows with global life expectancy." />
+  <meta property="og:image" content="/LET_logo.png" />
+  <meta property="og:url" content="https://let-token.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Life Expectancy Token (LET)" />
+  <meta name="twitter:description" content="Invest in humanity's time — LET on Arbitrum." />
+  <meta name="twitter:image" content="/LET_logo.png" />
+  <link rel="icon" type="image/png" href="/LET_logo.png" />
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
