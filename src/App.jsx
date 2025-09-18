@@ -301,7 +301,9 @@ export default function App() {
             <p className="text-sm text-neutral-600">
               Flow: <strong>Connect</strong> → <strong>Approve</strong> USDC for the amount
               you plan to mint → <strong>Mint LET</strong>. Your funds stay in your wallet until you confirm.
-             Please note: to see your LEL and USDC balances - please add Arbitrium  One network and Coins:USDC address: 0xaf88d065e77c8cC2239327C5EDb3A432268e5831, LET Address: 0xD47B8Fb7A323cB095Ec80BE7a704AF0e9ef5Cc72
+             Please note: to see your <strong>LET</strong> and <strong>USDC</strong> balances - please add <strong>Arbitrium  One</strong> network and Coins:
+              USDC address: <strong>0xaf88d065e77c8cC2239327C5EDb3A432268e5831</strong>, 
+              LET Address: <strong>0xD47B8Fb7A323cB095Ec80BE7a704AF0e9ef5Cc72</strong>
             </p>
 
             {/* Amount input */}
