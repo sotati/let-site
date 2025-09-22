@@ -298,13 +298,27 @@ export default function App() {
           {/* Left: guided flow */}
           <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 space-y-6">
             <h2 className="text-2xl font-semibold">Buy / Mint LET</h2>
-            <p className="text-sm text-neutral-600">
-              Flow: <strong>Connect</strong> → <strong>Approve</strong> USDC for the amount
-              you plan to mint → <strong>Mint LET</strong>. Your funds stay in your wallet until you confirm.
-             Please note: to see your <strong>LET</strong> and <strong>USDC</strong> balances - please add <strong>Arbitrium  One</strong> network and Coins:
-              USDC address: <strong>0xaf88d065e77c8cC2239327C5EDb3A432268e5831</strong>, 
-              LET Address: <strong>0xD47B8Fb7A323cB095Ec80BE7a704AF0e9ef5Cc72</strong>
-            </p>
+           <p className="text-sm text-neutral-600">
+  Flow: <strong>Connect</strong> → <strong>Approve</strong> USDC for the amount
+  you plan to mint → <strong>Mint LET</strong>. Your funds stay in your wallet until you confirm.
+  Please note: to see your <strong>LET</strong> and <strong>USDC</strong> balances - please add <strong>Arbitrum One</strong> network and Coins:
+  USDC address: <strong>0xaf88d065e77c8cC2239327C5EDb3A432268e5831</strong>, 
+  LET Address: <strong>0xD47B8Fb7A323cB095Ec80BE7a704AF0e9ef5Cc72</strong>
+</p>
+
+<p className="text-sm text-neutral-600">
+  The LET contract is fully open, verified on <strong>Arbitrum One</strong>, and designed
+  to ensure there is no rug-pull risk. You can review it anytime on{" "}
+  <a
+    href="https://arbiscan.io/token/0xD47B8Fb7A323cB095Ec80BE7a704AF0e9ef5Cc72"
+    className="font-semibold text-emerald-600 underline decoration-emerald-500 underline-offset-2 hover:text-emerald-500"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Arbiscan
+  </a>.
+</p>
+
 
             {/* Amount input */}
             <div>
