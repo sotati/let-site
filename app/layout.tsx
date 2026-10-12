@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     description: 'Give it to a stranger. One question. One human.',
     url: '/',
     siteName: 'Human Oracle',
-    images: [{ url: '/og.png', width: 1734, height: 907, alt: 'Human Oracle — Give it to a stranger.' }],
+    images: [{ url: '/og.jpg', width: 1734, height: 907, alt: 'Human Oracle — Give it to a stranger.' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Human Oracle',
     description: 'Give it to a stranger. One question. One human.',
-    images: ['/og.png'],
+    images: ['/og.jpg'],
   },
 };
 
