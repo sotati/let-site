@@ -1,12 +1,39 @@
-# React + Vite
+# Human Oracle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Human Oracle is a deliberately small anti-overthinking tool. One anonymous human answers another human's short YES/NO question; the asker then records how that answer felt and whether it clarified what they want.
 
-Currently, two official plugins are available:
+## Product loop
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`DECIDE → ASK → WAIT → REVEAL → REACT → DECIDE`
 
-## Expanding the ESLint configuration
+- No accounts, profiles, comments, messages, or demographic targeting.
+- Only the first answer counts, and devices cannot answer their own questions.
+- Questions expire after 24 hours.
+- Anonymous local device IDs support continuity without authentication.
+- Approximate IP location is rounded before temporary storage, used only to derive distance, and removed when the question is answered or expires.
+- Lightweight moderation blocks high-risk and identifying content.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Local development
+
+Requires Node.js 22.13 or newer.
+
+```bash
+npm install
+npm run dev
+```
+
+Copy `.env.example` to `.env.local` and provide an Upstash Redis REST URL and token. In Vercel, the Upstash Marketplace integration injects these values automatically.
+
+## Checks
+
+```bash
+npm run typecheck
+npm run lint
+npm run build
+```
+
+The backend uses Upstash Redis over HTTP, which is safe for Vercel's serverless runtime. Atomic Lua scripts enforce first-answer-wins, question credits, duplicate prevention, and expirations.
+
+## Analytics events
+
+An anonymous Redis event stream records session starts, question views, submissions, answers, reveal views, and reactions. Combined with reaction records, this supports the primary metric: the percentage of completed sessions where the asker says they now know what they want.
