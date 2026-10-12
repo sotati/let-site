@@ -2,6 +2,8 @@
 
 Human Oracle is a deliberately small anti-overthinking tool. One anonymous human answers another human's short YES/NO question; the asker then records how that answer felt and whether it clarified what they want.
 
+Production: [human-oracle-app.vercel.app](https://human-oracle-app.vercel.app)
+
 ## Product loop
 
 `DECIDE → ASK → WAIT → REVEAL → REACT → DECIDE`
